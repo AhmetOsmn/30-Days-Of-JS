@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Day 1</title>
+    <style>
+        .done{
+            color: yellow;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body class="container">
+
+    <div class="row p-4">
+            <!-- alert: Inline Script -->
+        <button class="btn btn-info mb-2" onclick="alert('Welcome to 30 Days Of JS')">Welcome</button>
+        <button class="btn btn-primary" onclick="alert('Happy new year!')">Best Wish</button>
+    </div>    
+
+    <div class="border p-4">
+        <h1>Notlar</h1>
+        <p class="form-control">Script'ler Head içerisinde veya Body içerisinde olabilir.</p>
+        <p class="form-control">Genelde tercih edilen yöntem Body içerisine eklemektir.</p>
+        <p class="form-control">JS'te primitive veri tipleri: String, Number, Boolean, undefined, Null ve Symbol'dür.</p>
+        <p class="form-control">Eğer tanımladığımız bir değişkene değer ataması yapmadan bir metot içerisinde kullanmak istersek değerini <b>undefined</b> olarak görürüz. Örnek olarak: <br><br>
+        let firstName <br>
+        console.log(firstName) --> undefined        
+        </p>
+        <p class="form-control">Null, boş değer (empty value) anlamına gelir.</p>
+        <p class="form-control">Bir değişkenin tipini öğrenmek istiyorsak <b>typeof</b> operatörünü kullanabiliriz: <br><br>    
+        console.log(typeof 'hede') <br>
+        console.log(typeof 5) <br>
+        console.log(typeof true) 
+        </p>        
+        <p class="form-control">Değişkenleri <b>var</b>,<b>let</b> veya <b>const</b> keyword'leri ile tanımlayabiliriz. <br><br>
+        Eğer bir değişkenin değeri farklı zamanlarda değişebiliyorsa <b>let</b> kullanarak tanımlarız. <br>
+        Eğer değişkenin değeri hiçbir zaman değişmiyorsa <b>const</b> kullanarak tanımlarız. <br>            
+        </p>
+        <p class="form-control">JS için doğru değişken isimlendirmek için gereken kurallar: <br><br>
+        - Değişken ismi bir sayı ile başlamaz. <br>
+        - Değişken isminde özel karakter olarak sadece dolar işareti ($) veya alt çizgi (_) kullanılabilir. <br>
+        - Değişkenler <b>camelCase</b> olarak isimlendirilir. Class'lar ise <b>CamelCase</b> olarak isimlendirilir. <br>
+        - Değişken ismi boşluk karakterini (" ") içeremez.        
+        </p>
+    </div>
+    
+    <div class="border p-4 mb-4 mt-4">
+        <h1>Egzersizler</h1>
+        <p class="form-control done">Tek satırlık bir yorum satırı olarak "yorum satırları kodu okunabilir yapar" yaz.</p>
+        <p class="form-control done">Bir tane daha tek satırlık bir yorum satırı olarak "Welcome to 30DaysOfJavaScript" yaz.</p>
+        <p class="form-control done">Bir tane çok satırlı yorum satırı yaz ve içerisinde "yorum satırları kodu okunabilir kılar, yeniden kullanım için kolay ve bilgilendiricidir. "</p>
+        <p class="form-control done"><b>variable.js</b> adında bir dosya oluştur ve içerisinde değişkenler oluştur. Bu değişkenlere <b>string, boolean, undefined ve null</b> değerleri ata.</p>
+        <p class="form-control done"><b>datatypes.js</b> adında bir dosya oluştur ve içerisinde <b>typeof</b> operatörünü kullanarak farklı değişkenlerin tiplerini kontrol et.</p>
+        <p class="form-control done">4 adet değişken tanımla ama değer ataması yapma.</p>
+        <p class="form-control done">4 adet değişken tanımla ve bunlara değerler ata.</p>
+        <p class="form-control done">Çoklu satırda olacak şekilde senin ismini, soyismini, evlilik durumunu, ülkeni ve yaşını tutan değişkenler tanımla.</p>
+        <p class="form-control done">Tek satırda olacak şekilde senin ismini, soyismini, evlilik durumunu, ülkeni ve yaşını tutan değişkenler tanımla.</p>
+        <p class="form-control done">2 tane <b>myAge</b> ve <b>yourAge</b> adınde değişken tanımla ve bu değişkenlere değer ata. Sonrasında tarayıcının konsolune şu şekilde değerleri yazdır: <br><br>
+        I am 25 years old. <br>
+        You are 30 years old.
+        </p>
+    </div>
+
+      <!-- Internal Script -->
+      <script>
+        console.log('Hello world with internal script.')
+    </script>
+
+    <!-- External Scripts -->
+    <script src="./introduction.js"></script>
+    <script src="./declareVariables.js"></script>
+    <script src="./variable.js"></script>
+    <script src="./datatypes.js"></script>
+    <script src="./exercises.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
