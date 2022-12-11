@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Day 3</title>
+    <style>
+        .done {
+            color: black;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body class="container">
+    <div class="border p-4 mt-4">
+        <h1>3. Gün Notları</h1>
+        <p class="form-control">Kıyaslamalarda 2 tip değer vardır: <br><br>
+            - Gerçek Değerler: <br>
+            - 0 hariç bütün sayılar, (pozitif ve negatif) gerçektir. <br>
+            - Boş string ("") hariç bütün string'ler gerçektir. <br>
+            - Boolean olarak true bir gerçek değerdir. <br> <br>
+
+            - Sahte Değerler: <br>
+            - 0 <br>
+            - 0n <br>
+            - null <br>
+            - undefined <br>
+            - NaN <br>
+            - Boolean olarak false <br>
+            - Empty stringler: "", '', ``
+        </p>
+        <p class="form-control">Bir değişken tanımladığımızda ve bu değişkene bir değer ataması yapmadığımızda, bu
+            değişkenin tipinin <b>undefined</b> olduğunu söylemiştik. Bu duruma ek olarak, yazdığımız bir fonksiyon
+            geriye bir değer return etmiyor ise bu fonksiyon da <b>undefined</b> durumdadır.</p>
+        <p class="form-control">Eşitlik kontolü yaparken iki farklı operatör kullanılabilir. <br><br>
+            1. 'x == y' : x ve y değişkenlerinin değerlerini kıyaslar. <br>
+            2. 'x === y' : x ve y değişkenlerinin değerlerini ve tiplerini kıyaslar. <br>
+
+            Örnek: <br>
+            console.log(3 == '3') --> true <br>
+            console.log(3 === '3') --> false <br> <br>
+            console.log(0 == false) --> true <br>
+            console.log(0 === false) --> false <br><br>
+            console.log(0 == '') --> true <br>
+            console.log(0 == ' ') --> true <br>
+            console.log(0 === '') --> false <br>
+            console.log(1 == true) --> true <br>
+            console.log(1 === true) --> false <br>
+            console.log(undefined == null) --> true <br>
+            console.log(undefined === null) --> false <br>
+            console.log(NaN == NaN) --> false <br>
+            console.log(NaN === NaN) --> false <br>
+        </p>
+        <p class="form-control">Window fonksiyonlarından <b>prompt()</b>: <br><br>
+            Ekrandan alınan bir değeri, bir değişkene atamak için kullanırız. İlk parametresi zorunludur. İkinci
+            parametre placeholder görevini görür ve opsiyoneldir. Örnek kullanımı: <br>
+            let number = prompt('Enter number','number goes here') <br>
+            console.log(number)
+        </p>
+        <p class="form-control">Window fonksiyonlarından <b>confirm()</b>: <br><br>
+            Kullanıcıya bir onaylatma işlemi yapmamızı sağlar. İçerisine ekranda sorulması istenen mesajı yazarız. <br>
+            confirm() fonksiyonu ekranda bir popup açar ve verilen mesaj ile birlikte <b>ok</b> ve <b>cancel</b>
+            butonları gözükür. Burada <b>ok -> true</b>, <b>cancel -> false</b> şeklinde atama gerçekleştirilir. Örnek
+            kullanımı: <br>
+            const agree = confirm('Are you sure you like to delete? ') <br>
+            console.log(agree)
+        </p>
+        <p class="form-control"><b>Date</b> objesi ile bazı örnek çalışmalar: <br><br>
+            const now = new Date() <br>
+            console.log(now) --> Mon Dec 12 2022 01:02:32 GMT+0300 (GMT+03:00) <br>
+            console.log(now.getFullYear()) --> 2022 <br>
+            console.log(now.getMonth()) --> 11 <br>
+            console.log(now.getDate()) --> 12 <br>
+            console.log(now.getDay()) --> 1 <br>
+            console.log(now.getHours()) --> 1 <br>
+            console.log(now.getMinutes()) --> 2 <br>
+            console.log(now.getSeconds()) --> 32 <br>
+
+        </p>
+    </div>
+
+    <div class="border p-4 mb-4 mt-4 done">
+        <h1>Egzersizler</h1>
+    </div>
+    <script src="./excersises.js"></script>
+</body>
+
+</html>
